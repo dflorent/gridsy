@@ -1,0 +1,49 @@
+/**
+ * Gridsy, a sass grid system tool
+ *
+ * This tool is inspired by https://github.com/tzi/Herow. Thanks @tzi!
+ *
+ * @see https://github.com/tzi/Herow
+ * @author Florent Desjardins
+ */
+
+/**
+ * Default number of column
+ *
+ * @type Interger
+ */
+$gridsy-column-count: 12 !default;
+
+/**
+ * Default gutter width
+ *
+ * @type Length
+ */
+$gridsy-gutter-width: 20px !default;
+
+/**
+ * Styles for grid row
+ *
+ * @param {Length} $gutter-width (20px) - The size of the grid gutter
+ */
+@mixin gridsy-row($gutter-width: $gridsy-gutter-width) {
+    margin-left: -$gutter-width;
+}
+
+/**
+ * Styles for grid column
+ *
+ * @param {Integer} $column-span (1) - The span length of the column
+ * @param {Integer} $column-count (12) - The number of columns of the grid
+ * @param {Length} $gutter-width (20px) - The size of the grid gutter
+ */
+@mixin gridsy-column($column-span: 1, $column-count: $gridsy-column-count, $gutter-width: $gridsy-gutter-width) {
+    width: percentage($column-span / $column-count);
+    box-sizing: border-box;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: $gutter-width;
+    margin-right: -0.25em;
+    *zoom: 1;
+    *display: inline;
+}

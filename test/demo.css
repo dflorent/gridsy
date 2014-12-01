@@ -1,0 +1,192 @@
+/**
+ * Gridsy, a sass grid system tool
+ *
+ * This tool is inspired by https://github.com/tzi/Herow. Thanks @tzi!
+ *
+ * @see https://github.com/tzi/Herow
+ * @author Florent Desjardins
+ */
+/**
+ * Default number of column
+ *
+ * @type Interger
+ */
+/**
+ * Default gutter width
+ *
+ * @type Length
+ */
+/**
+ * Styles for grid row
+ *
+ * @param {Length} $gutter-width (20px) - The size of the grid gutter
+ */
+/**
+ * Styles for grid column
+ *
+ * @param {Integer} $column-span (1) - The span length of the column
+ * @param {Integer} $column-count (12) - The number of columns of the grid
+ * @param {Length} $gutter-width (20px) - The size of the grid gutter
+ */
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: sans-serif;
+  font-size: 14rem;
+  font-size: 14px;
+  color: #333; }
+
+.logo > *,
+.banner > *,
+.sidebar > *,
+.footer-col > *,
+.content-col > * {
+  background: #EEE;
+  border: 1px solid #DDD;
+  padding: 10px; }
+
+.wrapper {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.header {
+  margin-left: -20px;
+  margin-bottom: 20px; }
+
+.logo {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-right: -0.25em;
+  *zoom: 1;
+  *display: inline; }
+  @media (min-width: 768px) {
+    .logo {
+      width: 25%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline; } }
+
+.banner {
+  display: none; }
+  @media (min-width: 768px) {
+    .banner {
+      display: block;
+      width: 75%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline; } }
+
+.main {
+  margin-left: -40px; }
+
+.content {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 40px;
+  margin-right: -0.25em;
+  *zoom: 1;
+  *display: inline; }
+  @media (min-width: 768px) {
+    .content {
+      width: 66.66667%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 40px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline; } }
+
+.content-cols {
+  margin-left: -20px; }
+
+.content-col {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-right: -0.25em;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 10px; }
+  @media (min-width: 640px) {
+    .content-col {
+      width: 50%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline;
+      margin-bottom: 0; } }
+
+.sidebar {
+  display: none; }
+  @media (min-width: 768px) {
+    .sidebar {
+      display: block;
+      width: 33.33333%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 40px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline; } }
+
+.footer {
+  margin-top: 20px; }
+
+.footer-cols {
+  margin-left: -20px; }
+
+.footer-col {
+  width: 100%;
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  padding-left: 20px;
+  margin-right: -0.25em;
+  *zoom: 1;
+  *display: inline;
+  margin-bottom: 10px; }
+  @media (min-width: 640px) {
+    .footer-col {
+      width: 33.33333%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline; } }
+  @media (min-width: 768px) {
+    .footer-col {
+      width: 16.66667%;
+      box-sizing: border-box;
+      display: inline-block;
+      vertical-align: top;
+      padding-left: 20px;
+      margin-right: -0.25em;
+      *zoom: 1;
+      *display: inline;
+      margin-bottom: 0; } }
+
+/*# sourceMappingURL=demo.css.map */
