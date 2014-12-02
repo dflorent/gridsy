@@ -1,12 +1,32 @@
 Gridsy
 ======
 
-Travail en cours...
+Work in progress...
 
-Environnement de développement
-------------------------------
+Usage
+-----
 
-Exécuter les commandes suivantes avant de démarrer:
+```scss
+@import "gridsy.scss";
+
+
+.main {
+    @include gridsy-row();
+}
+
+.content {
+    @include gridsy-column(8);
+}
+
+.sidebar {
+    @include gridsy-column(4);
+}
+```
+
+Setting up your Development Environment
+---------------------------------------
+
+Run the following commands before starting:
 
 ```
 npm install
@@ -15,20 +35,22 @@ npm install
 Documentation
 -------------
 
-Générer la documentation :
+The documentation is available on http://dflorent.github.io/gridsy.
+
+Generate the documentation:
 
 ```
 npm install sassdoc -g
 sassdoc src doc
 ```
 
-Compilation des feuilles de styles
+Compile the stylesheets
 ----------------------------------
 
 ```
 grunt sass
 ```
-ou
+or
 ```
 grunt watch
 ```
