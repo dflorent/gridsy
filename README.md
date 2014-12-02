@@ -23,7 +23,7 @@ Usage
 }
 ```
 
-Setting up your Development Environment
+Setting up your development environment
 ---------------------------------------
 
 Run the following commands before starting:
