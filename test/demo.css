@@ -1,33 +1,7 @@
-/**
- * Gridsy, a sass grid system tool
- *
- * This tool is inspired by https://github.com/tzi/Herow. Thanks @tzi!
- *
- * @see https://github.com/tzi/Herow
- * @author Florent Desjardins
- */
-/**
- * Default number of column
- *
- * @type Interger
- */
-/**
- * Default gutter width
- *
- * @type Length
- */
-/**
- * Styles for grid row
- *
- * @param {Length} $gutter-width (20px) - The size of the grid gutter
- */
-/**
- * Styles for grid column
- *
- * @param {Integer} $column-span (1) - The span length of the column
- * @param {Integer} $column-count (12) - The number of columns of the grid
- * @param {Length} $gutter-width (20px) - The size of the grid gutter
- */
+* {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
 html {
   font-size: 62.5%; }
 
@@ -54,87 +28,78 @@ body {
 .header {
   margin-left: -20px;
   margin-bottom: 20px; }
+  .header:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .logo {
-  width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 20px;
-  margin-right: -0.25em;
-  *zoom: 1;
-  *display: inline; }
+  width: 100%;
+  float: left;
+  padding-left: 20px; }
   @media (min-width: 768px) {
     .logo {
-      width: 25%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 20px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline; } }
+      width: 25%;
+      float: left;
+      padding-left: 20px; } }
 
 .banner {
   display: none; }
   @media (min-width: 768px) {
     .banner {
       display: block;
-      width: 75%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 20px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline; } }
+      width: 75%;
+      float: left;
+      padding-left: 20px; } }
 
 .main {
   margin-left: -40px; }
+  .main:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .content {
-  width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 40px;
-  margin-right: -0.25em;
-  *zoom: 1;
-  *display: inline; }
+  width: 100%;
+  float: left;
+  padding-left: 40px; }
   @media (min-width: 768px) {
     .content {
-      width: 66.66667%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 40px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline; } }
+      width: 66.66667%;
+      float: left;
+      padding-left: 40px; } }
 
 .content-cols {
   margin-left: -20px; }
+  .content-cols:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .content-col {
-  width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
+  width: 100%;
+  float: left;
   padding-left: 20px;
-  margin-right: -0.25em;
-  *zoom: 1;
-  *display: inline;
   margin-bottom: 10px; }
   @media (min-width: 640px) {
     .content-col {
-      width: 50%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
+      width: 50%;
+      float: left;
       padding-left: 20px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline;
       margin-bottom: 0; } }
 
 .sidebar {
@@ -142,51 +107,43 @@ body {
   @media (min-width: 768px) {
     .sidebar {
       display: block;
-      width: 33.33333%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 40px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline; } }
+      width: 33.33333%;
+      float: left;
+      padding-left: 40px; } }
 
 .footer {
   margin-top: 20px; }
 
 .footer-cols {
-  margin-left: -20px; }
+  margin-left: -10px; }
+  .footer-cols:after {
+    content: "";
+    display: table;
+    clear: both; }
 
 .footer-col {
-  width: 100%;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  display: inline-block;
-  vertical-align: top;
-  padding-left: 20px;
-  margin-right: -0.25em;
-  *zoom: 1;
-  *display: inline;
+  width: 100%;
+  float: left;
+  padding-left: 10px;
   margin-bottom: 10px; }
   @media (min-width: 640px) {
     .footer-col {
-      width: 33.33333%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 20px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline; } }
+      width: 33.33333%;
+      float: left;
+      padding-left: 10px; } }
   @media (min-width: 768px) {
     .footer-col {
-      width: 16.66667%;
+      -moz-box-sizing: border-box;
       box-sizing: border-box;
-      display: inline-block;
-      vertical-align: top;
-      padding-left: 20px;
-      margin-right: -0.25em;
-      *zoom: 1;
-      *display: inline;
+      width: 16.66667%;
+      float: left;
+      padding-left: 10px;
       margin-bottom: 0; } }
 
 /*# sourceMappingURL=demo.css.map */

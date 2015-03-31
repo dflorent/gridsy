@@ -41,7 +41,7 @@ Generate the documentation:
 
 ```
 npm install sassdoc -g
-sassdoc src doc
+sassdoc src -d doc
 ```
 
 Compile the stylesheets
